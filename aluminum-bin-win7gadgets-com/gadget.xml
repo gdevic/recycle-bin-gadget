@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+	<name>AluminumBin</name>
+	<namespace>Cestino</namespace>
+	<version>2.0</version>
+	<author name="Purplex">
+    	<info url="http://purplex.altervista.org/" text="Purplex"/>
+		<logo src="logo.png" />
+	</author>
+	<copyright>&#169; 2010</copyright>
+	<description>Cestino, in italiano, per sidebar di Windows 7. Realizzato da Purplex.</description>
+	<icons>
+		<icon height="48" width="48" src="icon.png" />
+	</icons>
+	<hosts>
+		<host name="sidebar">
+			<base type="HTML" apiVersion="1.0.0" src="RecycleBin.html" />
+			<permissions>full</permissions>
+			<platform minPlatformVersion="0.3"/>
+		</host>
+	</hosts>
+</gadget>

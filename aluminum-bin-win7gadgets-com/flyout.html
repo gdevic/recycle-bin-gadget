@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Корзина</title>
+	<link href="css/flyout.css" rel="stylesheet" type="text/css" />
+	<script language="javascript" src="js/flyout.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"></head>
+<body>
+	<div id="flyout">
+		<g:background id="flyoutBackground" src="images/FlyoutBack.png" style="position:absolute; z-index:-999" />
+		
+		<div id="flyoutContents">
+			<table id="flyoutTitle" style="position: absolute; left: 53px; top: 10px; text-align: center; color: #FFFFFF">
+				<tr style="width : 164px; height : 20px;">
+					<td style="font-size : 20px;">
+						Корзина
+					</td>
+				</tr>
+				<tr style="width : 164px; height : 15px;">
+					<td style="font-size : 12px;">
+						<div id="binContents"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size : 12px;">
+						<div id="binSize"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size : 14px;">
+						<div id="binOptions">
+							<div id="binEmpty"><a id="binEmptyLink" href="javascript:void(0);" onFocus="this.blur();">Очистить  </a></div>
+							<div><a id="binOpenLink" href="javascript:void(0);" onFocus="this.blur();">Что внутри?</a></div>
+							<div><a id="binPropertiesLink" href="javascript:void(0);" onFocus="this.blur();">Параметры</a></div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+</body>
+</html>
