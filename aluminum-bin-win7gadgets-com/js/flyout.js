@@ -8,9 +8,9 @@ window.onload = function()
 
     var fileCount = System.Shell.RecycleBin.fileCount;
     var folderCount = System.Shell.RecycleBin.folderCount;
-    var fileText = (fileCount > 1) ? " files, " : " file, ";
+    var fileText = (fileCount > 1) ? " files " : " file ";
     var folderText = (folderCount > 1) ? " folders" : " folder";
-    binContents.innerText = fileCount + fileText + folderCount + folderText;
+    binContents.innerText = (fileCount ? (fileCount + fileText) : "") + (folderCount ? (folderCount + folderText) : "");
     binSize.innerText = convertBytes(System.Shell.RecycleBin.sizeUsed);
     binEmpty.style.display = isEmpty ? "none" : "block";
 }
